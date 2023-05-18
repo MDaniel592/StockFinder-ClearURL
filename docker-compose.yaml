@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+  stockfinder-clearurl:
+    build: ./
+    image: stockfinder-clearurl:latest
+    container_name: stockfinder-clearurl
+    restart: always
+    env_file:
+      - .env
